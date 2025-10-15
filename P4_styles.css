@@ -1,0 +1,32 @@
+title {
+    display:none;
+}
+body {
+    background-color: #121212;
+    font-family: 'Letter Gothic', monospace;
+}
+h1 {
+    text-align: center;
+    color: #E0E0E0;
+}
+p {
+    color: #E0E0E0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+span {
+    color: #1e90ff;
+    font-size: 1.25rem;
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+hr {
+    color: #E0E0E0;
+}
+i {
+    color: #B0B0B0;
+}

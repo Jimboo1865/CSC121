@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Famous Quotes Page-->
+<link rel="stylesheet" href="styles.css">
+<html lang="en">
+    <head>
+        <title>Famous Quotes</title>
+        <link href="https://fonts.cdnfonts.com/css/letter-gothic" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Famous Quotes</h1>
+        <p>To interact with the photos please <span>hover</span> your mouse over a photo to see a famous quote from the author.</p>
+        <div>
+            <img alt="Niccolo Machiavelli" src="Images/Niccolo%20Machiavelli.jpeg"
+                 height=400px
+                 onmouseover="captionP.innerHTML='Men ought either to be indulged or utterly destroyed, for if you merely offend them they take vengeance, but if you injure them greatly they are unable to retaliate, so that the injury done to a man ought to be such that vengeance cannot be feared. <i>-Niccolo Machiavelli</i>';"
+                 onmouseout="captionP.innerHTML='';">
+             <img alt="Alexandre Dumas" src="Images/Alexandre%20Dumas.jpeg"
+                 height=400px
+                 onmouseover="captionP.innerHTML='There is neither happiness nor unhappiness in this world; there is only the comparison of one state with another. Only a man who has felt ultimate despair is capable of feeling ultimate bliss. It is necessary to have wished for death in order to know how good it is to live.....the sum of all human wisdom will be contained in these two words: Wait and Hope. <i>-Alexandre Dumas</i>';"
+                 onmouseout="captionP.innerHTML='';">
+            <img alt="Mahatma Gandhi" src="Images/Mahatma%20Gandhi.jpeg"
+                 height=400px
+                 onmouseover="captionP.innerHTML='You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty. <i>-Mahatma Gandhi</>';"
+                 onmouseout="captionP.innerHTML='';">
+
+        </div>
+        <hr>
+        <p id="captionP"> </p>
+    </body>
+</html>
