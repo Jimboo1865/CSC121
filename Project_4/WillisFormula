@@ -1,4 +1,4 @@
-N = int(input('Enter the number of terms: '))1
+N = int(input('Enter the number of terms: '))
 value = 1
 for i in range(N):
     k = i+1
