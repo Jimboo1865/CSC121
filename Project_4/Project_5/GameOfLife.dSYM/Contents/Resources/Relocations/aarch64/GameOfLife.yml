@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jamesnovak/Desktop/CSC121/Project_4/Project_5/GameOfLife'
+relocations:     []
+...
