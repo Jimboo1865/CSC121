@@ -32,21 +32,24 @@ int main() {
         for (int x = 0; x < WIDTH; ++x)
             current[y][x] = rand() % 2;
 
-    // SFML 3.0 style window creation
-    sf::RenderWindow window(sf::VideoMode({WIDTH * CELL_SIZE, HEIGHT * CELL_SIZE}), "Conway's Game of Life");
+    sf::RenderWindow window(
+    sf::VideoMode({WIDTH * CELL_SIZE, HEIGHT * CELL_SIZE}),
+    "Conway's Game of Life",
+    sf::State::Windowed
+);
     window.setFramerateLimit(10);
 
-    sf::RectangleShape cell(sf::Vector2f(CELL_SIZE - 1, CELL_SIZE - 1));
+    sf::RectangleShape cell({CELL_SIZE - 1.0f, CELL_SIZE - 1.0f});
     cell.setFillColor(sf::Color::Green);
 
     while (window.isOpen()) {
-        // SFML 3.0 event handling
+        // New SFML 3.0 event handling
         while (auto event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
                 window.close();
         }
 
-        // Update next frame
+        // Compute next state
         for (int y = 0; y < HEIGHT; ++y) {
             for (int x = 0; x < WIDTH; ++x) {
                 int n = countNeighbors(current, x, y);
@@ -60,7 +63,7 @@ int main() {
         for (int y = 0; y < HEIGHT; ++y) {
             for (int x = 0; x < WIDTH; ++x) {
                 if (current[y][x]) {
-                    cell.setPosition(sf::Vector2f(x * CELL_SIZE, y * CELL_SIZE));
+                    cell.setPosition({static_cast<float>(x * CELL_SIZE), static_cast<float>(y * CELL_SIZE)});
                     window.draw(cell);
                 }
             }

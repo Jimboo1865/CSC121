@@ -22,7 +22,8 @@
             },
             "problemMatcher": [
                 "$gcc"
-            ]
+            ],
+            "detail": "Builds GameOfLife with SFML"
         },
         {
             "type": "cppbuild",

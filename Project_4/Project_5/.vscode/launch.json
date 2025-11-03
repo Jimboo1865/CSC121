@@ -12,13 +12,7 @@
       "environment": [],
       "externalConsole": true,
       "MIMode": "lldb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for LLDB",
-          "text": "command script import lldb.macosx.heap"
-        }
-      ]
+      "preLaunchTask": "build GameOfLife"
     }
   ]
 }
-
