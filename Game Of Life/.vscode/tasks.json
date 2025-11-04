@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build GameOfLife",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17",
+                "GameOfLife.cpp",
+                "-o",
+                "GameOfLife",
+                "-I/opt/homebrew/Cellar/sfml/3.0.2/include",
+                "-L/opt/homebrew/Cellar/sfml/3.0.2/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

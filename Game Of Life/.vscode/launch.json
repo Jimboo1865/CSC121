@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug GameOfLife",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Project_4/Project_5/GameOfLife",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Project_4/Project_5",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "preLaunchTask": "build GameOfLife"
+        }
+    ]
+}
